@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
         e.preventDefault()
         console.log(e)
         addComment(e.target.feedback.value)
-        comment.requestFullscreen()
+        comment.reset()
     })
 })
 
