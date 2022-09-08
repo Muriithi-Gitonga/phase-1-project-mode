@@ -1,3 +1,7 @@
+/* * {
+    width: 100%;
+} */
+
 * {
     margin: 0;
     padding: 0;
@@ -6,7 +10,7 @@
 
 .main {
     width: 100%;
-    background: linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%), url(download.jpeg);
+    background: linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%), url(2.jpg);
     background-position: center;
     background-size: cover;
     height: 80vh;
@@ -37,11 +41,52 @@
     width: 400px;
     float: left;
     height: 70px;
+    
+}
+
+ul {
+   float: left;
+   display: flex;
+   justify-content: center;
+   text-align: center;
+
+}
+
+ul li {
+    list-style: none;
+    margin-left: 62px;
+    margin-top: 27px;
+    font-size: 14px;
+    
+}
+
+ul li a {
+    text-decoration: none;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    
+
+
+}
+
+ul li a:hover {
+    color: orange;
 }
 
 
 
-
+.btn {
+    width: 100px;
+    height: 40px;
+    background: orange;
+    border: 2px solid orange;
+    margin-top: 13px;
+    color: white;
+    font-size: 15px;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
 
 .content {
     width: 1200px;
@@ -51,27 +96,23 @@
 }
 
 .content p {
-    font-family: 'Sacramento', cursive ;
     padding-left: 20px;
     padding-bottom: 25px;
+    font-family: Arial;
     letter-spacing: 1.2px;
     line-height: 30px;
     color: white;
-    font-weight: bold;
-    font-size: 2em;
 }
 
 .content h1 {
-    font-family: 'Merriweather', cursive;
+    font-family: 'Times New Roman';
     font-size: 50px;
     padding-left: 20px;
     margin-top: 9%;
     letter-spacing: 2px;
-    color: #89CFFD;
-    font-weight: bold;
 }
 
-#form {
+#commentform {
     width: 250px;
     height: 380px;
     position: absolute;
@@ -79,5 +120,77 @@
     left: 770px;
     border-radius: 10px;
     padding: 25px;
+    
+}
+
+
+
+
+#commentform input {
+    width: 240px;
+    height: 35px;
+    border-bottom: 1px solid orange;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    font-family: sans-serif;
+}
+
+#button {
+    width: 240px;
+    height: 40px;
+    background: orange;
+    border: none;
+    margin-top: 30px;
+    font-size: 18px;
+    border-radius: 18px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#button:hover{
+    background: blue;
+}
+
+/* .row {
+    content: "";
+    clear: both;
+    display: table;
+  } */
+
+  .listcharacters {
+    
+    float: left;
+    text-align: center;
+    list-style: none;
+    margin-top: 62px;
+    width: 50%;
+    height: auto;
+    
+  
+  }
+
+  .images {
+    
+    /* margin-right: 5px; */
+    /* float: left; */
+    margin-top: 20px;
+    /* margin-bottom: 20px; */
+    
+  }
+
+.title {
+    margin: 62px auto 0 auto;
+    text-align: center;
+}
+
+
+.houses {
+    float: left;
+    margin-left: 62px;
+    padding-left: 20px;
     
 }
