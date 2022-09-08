@@ -1,32 +1,25 @@
 // adding event listeners
 document.addEventListener('DOMContentLoaded', () => {
-
-    // let form = document.getElementById("")
-
-
+//  adding event listener to the comment form
     let comment = document.getElementById('commentform')
-    console.log(comment)
+    
     comment.addEventListener('submit', (e) => {
         e.preventDefault()
-        console.log(e)
+        
         addComment(e.target.feedback.value)
         comment.reset()
     })
+
 })
 
+
+// renders value of the comment to the dorm
 function addComment (userComment) {
     let comment = document.createElement('li')
     comment.textContent = userComment
     document.getElementById("comment").appendChild(comment)
 
 }
-
-
-
-
-
-
-
 
 
 
@@ -48,15 +41,26 @@ function renderCharacter (character) {
     
     <img class="images" src = "${character['imageUrl']}">
     <h3 class='name'> ${character['name']} </h3>
-    <form action="#" id='users'>
+    <form  id='users'>
     <label for="fname"><h3>Add a description</h3></label>
     <input type="text" id="description"  placeholder="Description">
     <input type="submit" value="Submit description">
     </form>`
 
+    //adding event listener for  the description form
     
-   
-    document.getElementById("character-list").appendChild(li) 
     
-  
+    document.getElementById("character-list").appendChild(li)
+    let description = document.querySelector('#users')
+    console.log(description)
+    description.addEventListener('submit', addDescription)
+    
 }
+
+// adding the description to the dom
+function addDescription (e) {
+    e.preventDefault()
+}
+
+
+
