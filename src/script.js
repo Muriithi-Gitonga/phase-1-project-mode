@@ -1,8 +1,38 @@
+// adding event listeners
+document.addEventListener('DOMContentLoaded', () => {
+
+    // let form = document.getElementById("")
+
+
+    let comment = document.getElementById('commentform')
+    console.log(comment)
+    comment.addEventListener('submit', (e) => {
+        e.preventDefault()
+        console.log(e)
+        addComment(e.target.feedback.value)
+    })
+})
+
+function addComment (userComment) {
+    let comment = document.createElement('li')
+    comment.textContent = userComment
+    document.getElementById("comment").appendChild(comment)
+
+}
+
+
+
+
+
+
+
+
+
+
 
 //fetching the data from a public api
 async function get () {
     let disneyObj = await (await fetch("https://api.disneyapi.dev/characters")).json()
-    console.log(disneyObj)
     
     disneyObj["data"].forEach(character => renderCharacter(character))
 }
