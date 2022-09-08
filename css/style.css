@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+  
+}
+
+.main {
+    width: 100%;
+    background: linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%), url(download.jpeg);
+    background-position: center;
+    background-size: cover;
+    height: 80vh;
+    margin: 0 auto 0 auto;
+}
+
+.navbar {
+    width: 1200px;
+    height: 75px;
+    margin: 0 auto 0 auto;
+}
+.icon {
+    width: 200px;
+    float: left;
+    height: 70px;
+}
+
+.logo {
+    color: #ff7200;
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 20px;
+    float: left;
+    padding-top: 10px;
+}
+
+.menu {
+    width: 400px;
+    float: left;
+    height: 70px;
+}
+
+
+
+
+
+.content {
+    width: 1200px;
+    height: auto;
+    margin: auto;
+    position: relative;
+}
+
+.content p {
+    font-family: 'Sacramento', cursive ;
+    padding-left: 20px;
+    padding-bottom: 25px;
+    letter-spacing: 1.2px;
+    line-height: 30px;
+    color: white;
+    font-weight: bold;
+    font-size: 2em;
+}
+
+.content h1 {
+    font-family: 'Merriweather', cursive;
+    font-size: 50px;
+    padding-left: 20px;
+    margin-top: 9%;
+    letter-spacing: 2px;
+    color: #89CFFD;
+    font-weight: bold;
+}
+
+#form {
+    width: 250px;
+    height: 380px;
+    position: absolute;
+    top: -20px;
+    left: 770px;
+    border-radius: 10px;
+    padding: 25px;
+    
+}
