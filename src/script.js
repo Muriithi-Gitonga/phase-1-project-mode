@@ -37,29 +37,42 @@ get()
 function renderCharacter (character) {
     let li = document.createElement('li')
     li.className= "listcharacters"
-    li.innerHTML = `
-    
+    li.innerHTML = `   
     <img class="images" src = "${character['imageUrl']}">
     <h3 class='name'> ${character['name']} </h3>
-    <form  id='users'>
+    `
+    let form = document.createElement('form')
+    form.id = "users"
+    form.innerHTML = `
     <label for="fname"><h3>Add a description</h3></label>
     <input type="text" id="description"  placeholder="Description">
-    <input type="submit" value="Submit description">
-    </form>`
-
-    //adding event listener for  the description form
+    <input type="submit" value="Add description">
     
+    `
+
+    let userDescription = document.createElement('div')
+    userDescription.id = "userDescription"
+    li.appendChild(form)
+    form.appendChild(userDescription)
     
     document.getElementById("character-list").appendChild(li)
-    let description = document.querySelector('#users')
-    console.log(description)
-    description.addEventListener('submit', addDescription)
     
-}
+    //adding event listener for  the description form 
+    form.addEventListener('submit', (e) => {
+        e.preventDefault()
+        addDescription(e.target.description.value)
+    })
+    
+    
 
+}
 // adding the description to the dom
-function addDescription (e) {
-    e.preventDefault()
+function addDescription (descriptionValue) {
+    let userDescription = document.createElement('li')
+    userDescription.textContent = descriptionValue
+    document.getElementById('userDescription').appendChild(userDescription)
+
+
 }
 
 
