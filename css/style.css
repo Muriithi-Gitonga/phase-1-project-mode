@@ -1,185 +1,101 @@
-/* * {
-    width: 100%;
-} */
-
-* {
+body {
+    box-sizing: border-box;
     margin: 0;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    color: #404040;
+  }
+  
+  header {
+    float: left;
+    width: 225px;
+    height: auto;
+    border-right: solid #404040 1px;
+    border-bottom: solid #404040 1px;
+    border-radius: 0 0 6px 0;
+    padding: 10px;
+    margin-right: 10px;
+  }
+  
+  h1 {
+    font-family: "Great Vibes", cursive;
+    font-size: 52px;
+    color: #3493d5;
+    margin: 10px 0;
+  }
+  
+  ul {
     padding: 0;
+  }
   
-}
-
-.main {
-    width: 100%;
-    background: linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%), url(/images/1.jpg);
-    background-position: center;
-    background-size: cover;
-    height: 80vh;
-    margin: 0 auto 0 auto;
-}
-
-.navbar {
-    width: 1200px;
-    height: 75px;
-    margin: 0 auto 0 auto;
-}
-.icon {
-    width: 200px;
-    float: left;
-    height: 70px;
-}
-
-.logo {
-    color: #ff7200;
-    font-size: 35px;
-    font-family: Arial, Helvetica, sans-serif;
-    padding-left: 20px;
-    float: left;
-    padding-top: 10px;
-}
-
-.menu {
-    width: 400px;
-    float: left;
-    height: 70px;
-    
-}
-
-.main {
-    background-color: #CDF0EA;
-}
-
-
-
-
-.btn {
-    width: 100px;
-    height: 40px;
-    background: orange;
-    border: 2px solid orange;
-    margin-top: 13px;
-    color: white;
-    font-size: 15px;
-    border-bottom-right-radius: 5px;
-    border-top-left-radius: 5px;
-}
-
-.content {
-    width: 1200px;
-    height: auto;
-    margin: auto;
-    position: relative;
-}
-
-.content p {
-    padding-left: 20px;
-    padding-bottom: 25px;
-    font-family: 'Sacramento', cursive;
-    letter-spacing: 1.2px;
-    line-height: 30px;
-    color: aliceblue;
-    font-weight: bold;
-    font-size: 32px;
-}
-
-.content h1 {
-    font-family: 'Merriweather', sans-serif;
-    font-size: 54px;
-    padding-left: 20px;
-    margin-top: 9%;
-    letter-spacing: 2px;
-    color: aliceblue;
-
-}
-
-#commentform {
-    width: 250px;
-    height: 380px;
-    position: absolute;
-    top: -20px;
-    left: 770px;
-    border-radius: 10px;
-    padding: 25px;
-    
-}
-
-
-
-
-#commentform input {
-    width: 240px;
-    height: 35px;
-    border-bottom: 1px solid orange;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    font-size: 15px;
-    letter-spacing: 1px;
-    margin-top: 30px;
-    font-family: sans-serif;
-}
-
-#button {
-    width: 240px;
-    height: 40px;
-    background: orange;
-    border: none;
-    margin-top: 30px;
-    font-size: 18px;
-    border-radius: 18px;
-    cursor: pointer;
-    font-weight: bold;
-}
-
-#button:hover{
-    background: blue;
-}
-
-/* .row {
-    content: "";
-    clear: both;
-    display: table;
-  } */
-
-  .listcharacters {
-    
-    float: left;
-    text-align: center;
+  li {
     list-style: none;
-    margin-top: 62px;
-    width: 50%;
-    height: auto;
-    
+  }
   
+  nav ul {
+    margin-left: 15px;
   }
-
-  .images {
-    
-    /* margin-right: 5px; */
-    /* float: left; */
-    margin-top: 20px;
-    /* margin-bottom: 20px; */
-    
+  
+  nav ul li {
+    padding: 5px;
+    cursor: pointer;
   }
-
-.title {
-    margin: 62px auto 0 auto;
-    text-align: center;
-    font-family: 'Merriweather', sans-serif;
-    color: aquamarine;
-}
-
-
-.houses {
+  
+  nav ul li:hover {
+    background-color: #f1a458;
+    color: #fff;
+  }
+  
+  main {
     float: left;
-    margin-left: 62px;
-    padding-left: 20px;
-    
-} 
-
-.character-list {
-    background-color: skyblue;
-}
-
-#comment-box {
-    color: white;
-}
+    margin-left: 50px;
+    width: 600px;
+  }
+  
+  .beer-details h2 {
+    font-size: 32px;
+    text-align: center;
+  }
+  
+  .beer-details h3 {
+    font-size: 24px;
+  }
+  
+  .beer-details img {
+    display: block;
+    height: 200px;
+    margin: 0 auto 25px auto;
+  }
+  
+  form {
+    width: 450px;
+    margin: 0 auto 50px auto;
+  }
+  
+  textarea {
+    display: block;
+    width: 100%;
+    height: 100px;
+    border: 1px solid gray;
+    padding: 5px;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
+  form button[type="submit"] {
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    background-color: #f1a458;
+    color: #fff;
+    padding: 7px 10px;
+    cursor: pointer;
+  }
+  
+  #review-list li {
+    background-color: #fff3a9;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
