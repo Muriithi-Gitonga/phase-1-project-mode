@@ -14,13 +14,17 @@
 </head>
 <body>
     <header>
+        <!--  -->
+    </header>
+
+    <div id="navbar">
         <h1>Disney Characters</h1>
         <nav>
             <ul id="character-list">
              
            </ul>
          </nav>
-       </header>
+        </div>
    
        <main>
          <div class="character-details">
@@ -30,7 +34,10 @@
              src=""
            />
            <p>
-             <em id="character-description">character Description Goes Here</em>
+             <em >character Description</em>
+             <ul id="character-description">
+
+             </ul>
            </p>
    
            <form id="description-form">
@@ -39,17 +46,18 @@
              <button type="submit">Add description</button>
            </form>
    
-           <h3>User comment</h3>
+           <h3>User feeback</h3>
            <ul id="review-list">
-             <li><i>leave us a feedback</i></li>
+             <!-- <li><i>Replace with a feedback</i></li> -->
              
            </ul>
-           <form id="review-form">
-             <label for="review">Your Review:</label>
-             <textarea id="review"></textarea>
-             <button type="submit">Add review</button>
+           <form id="feedback-form">
+             <label for="feeback" Your feedback:</label>
+             <textarea id="feedback"></textarea>
+             <button type="submit">Add feedback</button>
            </form>
          </div>
+        </main>
     </header>
 </body>
 </html>

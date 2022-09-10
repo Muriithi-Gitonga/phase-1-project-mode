@@ -5,9 +5,10 @@ body {
     font-size: 14px;
     color: #404040;
     background-color: #97D2EC;
+    
   }
   
-  header {
+  #navbar {
     float: left;
     width: 225px;
     height: auto;

@@ -1,5 +1,38 @@
 // public api https://api.disneyapi.dev/characters
 
+//adding event listener
+document.addEventListener('DOMContentLoaded', () => {
+    let feedback = document.querySelector("#feedback-form")
+    feedback.addEventListener('submit', (e) => {
+        e.preventDefault()
+        renderFeedback(e.target.feedback.value)
+        feedback.reset()
+    })
+
+    let description = document.querySelector("#description-form")
+    description.addEventListener('submit', (e) => {
+        e.preventDefault()
+        renderDescription(e.target.description.value)
+        description.reset()
+    })
+    
+})
+
+//render description to the dom
+function renderDescription(description) {
+    let li = document.createElement('li')
+    li.textContent = description
+    document.querySelector("#character-description").appendChild(li)
+}
+
+
+
+// render feedback to the dom
+function renderFeedback (feedback) {
+    let li = document.createElement('li')
+    li.textContent = feedback
+    document.querySelector("#review-list").appendChild(li)
+}
 
 // renders a one character on the dom
 function renderCharacter (data) {
@@ -7,11 +40,7 @@ function renderCharacter (data) {
     beerName.innerText = data.name
     let beerImage = document.querySelector("#character-image");
     beerImage.setAttribute("src", data.imageUrl);
-    //add review from the server
-    let reviews = document.querySelector("#review-list")
-    let reviewList = reviews.querySelectorAll("li")
     
-    reviewList[1].innerHTML = data.reviews
 
 }
 
@@ -42,7 +71,7 @@ function renderAllCharacterNames (character) {
 
 
 
-// get all the 
+// get all the data from the api
 async function initializeAll () {
     let characterObj = await(await (fetch("https://api.disneyapi.dev/characters"))).json()
     renderAllCharacterNames(characterObj) 
@@ -53,18 +82,8 @@ async function initializeAll () {
 initializeAll()
 
 
-//add review from the customer
 
-document.querySelector('#review-form').addEventListener('submit', (e) => {
-    e.preventDefault()
-    let customerReview = e.target.review.value
-    let reviews = document.querySelector("#review-list")
-    let reviewList = reviews.querySelectorAll("li")
-    
-    reviewList[0].innerHTML = customerReview
-    
-    
-})
+
 
 
 
