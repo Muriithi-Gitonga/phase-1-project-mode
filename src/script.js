@@ -1,8 +1,7 @@
-// https://api.disneyapi.dev/characters
+// public api https://api.disneyapi.dev/characters
 
 
-
-// renders a one beer on the dom
+// renders a one character on the dom
 function renderCharacter (data) {
     let beerName = document.querySelector("#character-name");
     beerName.innerText = data.name
@@ -14,18 +13,7 @@ function renderCharacter (data) {
     
     reviewList[1].innerHTML = data.reviews
 
-    
-
 }
-
-// deleting review from the dom
-
-let reviewList = document.querySelector("#review-list")
-console.log(reviewList)
-
-
-
-
 
 
 async function initialize () {
@@ -40,7 +28,7 @@ initialize()
 
 
 
-// renders beer names to the navbar and an event listener
+// renders character names to the navbar and an event listener
 function renderAllCharacterNames (character) {
   
     let ul = document.querySelector("ul")
@@ -54,7 +42,7 @@ function renderAllCharacterNames (character) {
 
 
 
-
+// get all the 
 async function initializeAll () {
     let characterObj = await(await (fetch("https://api.disneyapi.dev/characters"))).json()
     renderAllCharacterNames(characterObj) 
