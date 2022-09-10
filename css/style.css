@@ -11,7 +11,7 @@ body {
 
 header {
     text-align: center;
-    background: linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%), url(../images/download.jpeg);
+    background: linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%), url(../../images/download.jpeg);
     padding: 10px;
     height: auto;
    
