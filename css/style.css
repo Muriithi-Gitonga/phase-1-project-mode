@@ -3,11 +3,40 @@ body {
     margin: 0;
     font-family: "Merriweather", sans-serif;
     font-size: 14px;
-    color: #404040;
+    /* color: #404040; */
     background-color: #97D2EC;
     
+    
   }
-  
+
+header {
+    text-align: center;
+    background: linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%), url(/images/download.jpeg);
+    padding: 10px;
+    height: auto;
+   
+}
+
+header h1 {
+    color: #F7A76C;
+}
+header h2 {
+    color: #F7A76C;
+}
+
+
+header p {
+    color: #F9F9F9;
+    margin-bottom: 30px;
+}
+
+.title {
+    margin:0;
+    text-align: left;
+    /* background-color: white; */
+    font-family: "Merriweather";
+}
+
   #navbar {
     float: left;
     width: 225px;
@@ -23,7 +52,7 @@ body {
   
 
   #character-list {
-    height: 1000px;
+    height: 600px;
     overflow-y: scroll;
   }
 
