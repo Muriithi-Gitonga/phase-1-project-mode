@@ -30,7 +30,7 @@ HTTPS: `https://github.com/Muriithi-Gitonga/phase-1-project-mode.git`
 
 ## Live site
 
-### Project available Here: (`https://muriithi-gitonga.github.io/phase-1-project-mode/`)
+### `https://muriithi-gitonga.github.io/phase-1-project-mode/`
 
 
 ## License
